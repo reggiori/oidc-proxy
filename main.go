@@ -51,9 +51,9 @@ func init() {
 	viper.BindEnv("BACKEND_URL")
 	viper.SetDefault("BIND_ADDRESS", "0.0.0.0:8080")
 
-	if err := viper.ReadInConfig(); err != nil {
+	/*if err := viper.ReadInConfig(); err != nil {
 		log.Fatal(err)
-	}
+	}*/
 
 	err := viper.Unmarshal(&env)
 	if err != nil {
